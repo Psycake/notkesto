@@ -7,7 +7,7 @@
                 <meta charset="UTF-8" />
                 <meta name="node_id" content="Function">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <link rel="shortcut icon" href="favicon.ico" />
+                <link rel="shortcut icon" href="/favicon.ico" />
 
                 <!-- Set title -->
                 <title>🗃️ Notkesto</title>
@@ -195,17 +195,17 @@
                         <div id="left_pane" class="left_pane active">
                                 <div id="left_pane_fold_header" class="left_pane_fold_header fold_header">x</div>
                                 <div id="left_pane_content" class="left_pane_content">
-                                        <button id="folder-1" class="dir-button" onclick="toggle_dir(this.id)">images</button>
-<div id="folder-container-1" class="dir-container requires_js " path="/notkesto/images">
+                                        <button id="folder-1" class="dir-button" onclick="toggle_dir(this.id)">Images</button>
+<div id="folder-container-1" class="dir-container requires_js " path="/notkesto/Images">
 	<ul class="dir-list">
-		<li><a class="" href="/notkesto/images/BisectionMethodExample.png"  class="external-link">BisectionMethodExample</a></li>
-		<li><a class="" href="/notkesto/images/DigraphExample.png"  class="external-link">DigraphExample</a></li>
-		<li><a class="" href="/notkesto/images/InverseLinearTransformation.png"  class="external-link">InverseLinearTransformation</a></li>
-		<li><a class="" href="/notkesto/images/LessOctetSubnetB.png"  class="external-link">LessOctetSubnetB</a></li>
-		<li><a class="" href="/notkesto/images/Line.png"  class="external-link">Line</a></li>
-		<li><a class="" href="/notkesto/images/LinearTransformationComposition.png"  class="external-link">LinearTransformationComposition</a></li>
-		<li><a class="" href="/notkesto/images/MoreOctetSubnetB.png"  class="external-link">MoreOctetSubnetB</a></li>
-		<li><a class="" href="/notkesto/images/OneOctetSubnetB.png"  class="external-link">OneOctetSubnetB</a></li>
+		<li><a class="" href="/notkesto/Images/BisectionMethodExample.png"  class="external-link">BisectionMethodExample</a></li>
+		<li><a class="" href="/notkesto/Images/DigraphExample.png"  class="external-link">DigraphExample</a></li>
+		<li><a class="" href="/notkesto/Images/InverseLinearTransformation.png"  class="external-link">InverseLinearTransformation</a></li>
+		<li><a class="" href="/notkesto/Images/LessOctetSubnetB.png"  class="external-link">LessOctetSubnetB</a></li>
+		<li><a class="" href="/notkesto/Images/Line.png"  class="external-link">Line</a></li>
+		<li><a class="" href="/notkesto/Images/LinearTransformationComposition.png"  class="external-link">LinearTransformationComposition</a></li>
+		<li><a class="" href="/notkesto/Images/MoreOctetSubnetB.png"  class="external-link">MoreOctetSubnetB</a></li>
+		<li><a class="" href="/notkesto/Images/OneOctetSubnetB.png"  class="external-link">OneOctetSubnetB</a></li>
 	</ul>
 </div>
 <ul class="dir-list">
@@ -349,11 +349,12 @@
 <p><strong>Topics:</strong> <a href="/notkesto/not_created.html" class="nonexistent-link">Discrete Mathematics</a> - <a href="/notkesto/Calculus.html">Calculus</a>   </p>
 <hr />
 <p><strong><em>(definition)</em></strong>   </p>
-<p>A <em>function</em> of a set <span class="arithmatex">\(A\)</span> on a set <span class="arithmatex">\(B\)</span> is a <a href="/notkesto/Relation.html">relation</a> <span class="arithmatex">\(F : A \to B\)</span> if the following conditions are satisfied:   </p>
+<p>A <a href="/notkesto/Relation.html">relation</a> <span class="arithmatex">\(F\)</span> of a set <span class="arithmatex">\(A\)</span> on a set <span class="arithmatex">\(B\)</span> is a <em>function</em> if the following conditions are satisfied:   </p>
 <ol>
 <li><span class="arithmatex">\(\text{dom}(F) = A\)</span>   </li>
 <li><span class="arithmatex">\((a,b_{1}) \in F \land (a, b_{2}) \in F \implies b_1=b_2\)</span>   </li>
 </ol>
+<p>We denote such a relation with <span class="arithmatex">\(F : A \to B\)</span>. Functions have a <a href="/notkesto/Range of a Function.html">range</a>, <a href="/notkesto/Image and Preimage of a Function.html">an image and a preimage</a>.   </p>
 <div class="callout callout-example active callout-folded" rasa="1">
 <div class="callout-title" onclick="toggle(this.parentElement)">
 <div class="callout-title-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="callout-icon"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
@@ -366,13 +367,12 @@
 <div class="callout-content">
 <p>Let: <br />
 </p>
-<div class="arithmatex">\[F = \{ (x,y) \in \mathbb{R} \times \mathbb{R}\ |\ y = x^{2} \}$$   
-$$G = \{ (x,y) \in \mathbb{R} \times \mathbb{R}\ |\ x = y^{2} \}\]</div>
-<p>Notice that <span class="arithmatex">\(F\)</span> satisfies the conditions, so <span class="arithmatex">\(F\)</span> is a function, but <span class="arithmatex">\(G\)</span> does not, so <span class="arithmatex">\(G\)</span> is not a function. <br />
+<div class="arithmatex">\[F = \{ (x,y) \in \mathbb{R} \times \mathbb{R}\ |\ y = x^{2} \}\]</div>
+<div class="arithmatex">\[G = \{ (x,y) \in \mathbb{R} \times \mathbb{R}\ |\ x = y^{2} \}\]</div>
+<p>Notice that <span class="arithmatex">\(F\)</span> satisfies the conditions, so <span class="arithmatex">\(F\)</span> is a function, but <span class="arithmatex">\(G\)</span> does not, so <span class="arithmatex">\(G\)</span> is not a function.
 </p>
 </div>
 </div>
-<p>Functions have a <a href="/notkesto/Range of a Function.html">range</a>, <a href="/notkesto/Image and Preimage of a Function.html">an image and a preimage</a>.</p>
 <div class="note-footer">
 <div class="backlinks">
 <h2>Backlinks</h2>

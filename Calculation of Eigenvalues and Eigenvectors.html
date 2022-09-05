@@ -7,7 +7,7 @@
                 <meta charset="UTF-8" />
                 <meta name="node_id" content="Calculation of Eigenvalues and Eigenvectors">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <link rel="shortcut icon" href="favicon.ico" />
+                <link rel="shortcut icon" href="/favicon.ico" />
 
                 <!-- Set title -->
                 <title>🗃️ Notkesto</title>
@@ -195,17 +195,17 @@
                         <div id="left_pane" class="left_pane active">
                                 <div id="left_pane_fold_header" class="left_pane_fold_header fold_header">x</div>
                                 <div id="left_pane_content" class="left_pane_content">
-                                        <button id="folder-1" class="dir-button" onclick="toggle_dir(this.id)">images</button>
-<div id="folder-container-1" class="dir-container requires_js " path="/notkesto/images">
+                                        <button id="folder-1" class="dir-button" onclick="toggle_dir(this.id)">Images</button>
+<div id="folder-container-1" class="dir-container requires_js " path="/notkesto/Images">
 	<ul class="dir-list">
-		<li><a class="" href="/notkesto/images/BisectionMethodExample.png"  class="external-link">BisectionMethodExample</a></li>
-		<li><a class="" href="/notkesto/images/DigraphExample.png"  class="external-link">DigraphExample</a></li>
-		<li><a class="" href="/notkesto/images/InverseLinearTransformation.png"  class="external-link">InverseLinearTransformation</a></li>
-		<li><a class="" href="/notkesto/images/LessOctetSubnetB.png"  class="external-link">LessOctetSubnetB</a></li>
-		<li><a class="" href="/notkesto/images/Line.png"  class="external-link">Line</a></li>
-		<li><a class="" href="/notkesto/images/LinearTransformationComposition.png"  class="external-link">LinearTransformationComposition</a></li>
-		<li><a class="" href="/notkesto/images/MoreOctetSubnetB.png"  class="external-link">MoreOctetSubnetB</a></li>
-		<li><a class="" href="/notkesto/images/OneOctetSubnetB.png"  class="external-link">OneOctetSubnetB</a></li>
+		<li><a class="" href="/notkesto/Images/BisectionMethodExample.png"  class="external-link">BisectionMethodExample</a></li>
+		<li><a class="" href="/notkesto/Images/DigraphExample.png"  class="external-link">DigraphExample</a></li>
+		<li><a class="" href="/notkesto/Images/InverseLinearTransformation.png"  class="external-link">InverseLinearTransformation</a></li>
+		<li><a class="" href="/notkesto/Images/LessOctetSubnetB.png"  class="external-link">LessOctetSubnetB</a></li>
+		<li><a class="" href="/notkesto/Images/Line.png"  class="external-link">Line</a></li>
+		<li><a class="" href="/notkesto/Images/LinearTransformationComposition.png"  class="external-link">LinearTransformationComposition</a></li>
+		<li><a class="" href="/notkesto/Images/MoreOctetSubnetB.png"  class="external-link">MoreOctetSubnetB</a></li>
+		<li><a class="" href="/notkesto/Images/OneOctetSubnetB.png"  class="external-link">OneOctetSubnetB</a></li>
 	</ul>
 </div>
 <ul class="dir-list">
@@ -438,10 +438,10 @@
 <h4 id="second-step">Second step</h4>
 <p>Let's calculate <span class="arithmatex">\(\det(T - \lambda I_V) = \det([T]_\beta - \lambda I)\)</span>: <br />
 </p>
-<div class="arithmatex">\[\det \left(\begin{pmatrix} 1 &amp; 1 &amp; 0 \\ 0 &amp; 2 &amp; 2 \\ 0 &amp; 0 &amp; 3 \end{pmatrix} - \begin{pmatrix} \lambda &amp; 0 &amp; 0 \\ 0 &amp; \lambda &amp; 0 \\ 0 &amp; 0 &amp; \lambda \end{pmatrix} \right)$$   
-$$= \det \left(\begin{pmatrix} 1-\lambda &amp; 1 &amp; 0 \\ 0 &amp; 2-\lambda &amp; 2 \\ 0 &amp; 0 &amp; 3-\lambda \end{pmatrix} \right)$$   
-$$= (1 - \lambda)(2 - \lambda)(3 - \lambda)$$   
-$$= -(\lambda - 1)(\lambda - 2)(\lambda - 3)\]</div>
+<div class="arithmatex">\[\det \left(\begin{pmatrix} 1 &amp; 1 &amp; 0 \\ 0 &amp; 2 &amp; 2 \\ 0 &amp; 0 &amp; 3 \end{pmatrix} - \begin{pmatrix} \lambda &amp; 0 &amp; 0 \\ 0 &amp; \lambda &amp; 0 \\ 0 &amp; 0 &amp; \lambda \end{pmatrix} \right)\]</div>
+<div class="arithmatex">\[= \det \left(\begin{pmatrix} 1-\lambda &amp; 1 &amp; 0 \\ 0 &amp; 2-\lambda &amp; 2 \\ 0 &amp; 0 &amp; 3-\lambda \end{pmatrix} \right)\]</div>
+<div class="arithmatex">\[= (1 - \lambda)(2 - \lambda)(3 - \lambda)\]</div>
+<div class="arithmatex">\[= -(\lambda - 1)(\lambda - 2)(\lambda - 3)\]</div>
 <h4 id="third-step">Third step</h4>
 <p>We make this last expression we got equal to 0: <br />
 <span class="arithmatex">\(<span class="arithmatex">\(-(\lambda - 1)(\lambda - 2)(\lambda - 3) = 0 \implies \lambda_1 = 1, \lambda_2 = 2, \lambda_3 = 3\)</span>\)</span> <br />
@@ -471,13 +471,13 @@ $$= -(\lambda - 1)(\lambda - 2)(\lambda - 3)\]</div>
 <h3 id="eigenvector-corresponding-to-lambda_1-3">Eigenvector corresponding to <span class="arithmatex">\(\lambda_1 = 3\)</span></h3>
 <p>We'll calculate the eigenvector that corresponds to <span class="arithmatex">\(\lambda_1 = 3\)</span>: <br />
 </p>
-<div class="arithmatex">\[B = A - \lambda_1 I = \begin{pmatrix} 1 &amp; 1 \\ 4 &amp; 1 \end{pmatrix} - 3 \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix}$$   
-$$= \begin{pmatrix} 1 &amp; 1 \\ 4 &amp; 1 \end{pmatrix} - \begin{pmatrix} 3 &amp; 0 \\ 0 &amp; 3 \end{pmatrix}$$   
-$$= \begin{pmatrix} -2 &amp; 1 \\ 4 &amp; -2 \end{pmatrix}\]</div>
+<div class="arithmatex">\[B = A - \lambda_1 I = \begin{pmatrix} 1 &amp; 1 \\ 4 &amp; 1 \end{pmatrix} - 3 \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix}\]</div>
+<div class="arithmatex">\[= \begin{pmatrix} 1 &amp; 1 \\ 4 &amp; 1 \end{pmatrix} - \begin{pmatrix} 3 &amp; 0 \\ 0 &amp; 3 \end{pmatrix}\]</div>
+<div class="arithmatex">\[= \begin{pmatrix} -2 &amp; 1 \\ 4 &amp; -2 \end{pmatrix}\]</div>
 <p>Let <span class="arithmatex">\(x = \begin{pmatrix} x_1 \\ x_2 \end{pmatrix} \in \mathbb{R}^2\)</span> be an eigenvector that corresponds to <span class="arithmatex">\(\lambda_1 = 3 \iff x \neq 0\)</span> and <span class="arithmatex">\(x \in \ker(L_B)\)</span>. That is: <br />
 </p>
-<div class="arithmatex">\[\begin{pmatrix} -2 &amp; 1 \\ 4 &amp; -2 \end{pmatrix} \begin{pmatrix} x_1 \\ x_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}$$   
-$$\implies \begin{pmatrix} -2x_1 + x_2 \\ 4x_1 - 2x_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}\]</div>
+<div class="arithmatex">\[\begin{pmatrix} -2 &amp; 1 \\ 4 &amp; -2 \end{pmatrix} \begin{pmatrix} x_1 \\ x_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}\]</div>
+<div class="arithmatex">\[\implies \begin{pmatrix} -2x_1 + x_2 \\ 4x_1 - 2x_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}\]</div>
 <p>From that, we have: <br />
 </p>
 <ul>
@@ -493,13 +493,13 @@ $$\implies \begin{pmatrix} -2x_1 + x_2 \\ 4x_1 - 2x_2 \end{pmatrix} = \begin{pma
 <h3 id="eigenvector-corresponding-to-lambda_2-1">Eigenvector corresponding to <span class="arithmatex">\(\lambda_2 = -1\)</span></h3>
 <p>We'll calculate the vector that corresponds to <span class="arithmatex">\(\lambda_2 = -1\)</span>. <br />
 </p>
-<div class="arithmatex">\[B = A - \lambda_2 I = \begin{pmatrix} 1 &amp; 1 \\ 4 &amp; 1 \end{pmatrix} - (-1) \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix}$$   
-$$= \begin{pmatrix} 1 &amp; 1 \\ 4 &amp; 1 \end{pmatrix} - \begin{pmatrix} -1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix}$$   
-$$= \begin{pmatrix} 2 &amp; 1 \\ 4 &amp; 2 \end{pmatrix}\]</div>
+<div class="arithmatex">\[B = A - \lambda_2 I = \begin{pmatrix} 1 &amp; 1 \\ 4 &amp; 1 \end{pmatrix} - (-1) \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix}\]</div>
+<div class="arithmatex">\[= \begin{pmatrix} 1 &amp; 1 \\ 4 &amp; 1 \end{pmatrix} - \begin{pmatrix} -1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix}\]</div>
+<div class="arithmatex">\[= \begin{pmatrix} 2 &amp; 1 \\ 4 &amp; 2 \end{pmatrix}\]</div>
 <p>Let <span class="arithmatex">\(x = \begin{pmatrix} x_1 \\ x_2 \end{pmatrix} \in \mathbb{R}^2\)</span> be an eigenvector that corresponds to <span class="arithmatex">\(\lambda_2 = -1\)</span>, if and only if <span class="arithmatex">\(x \neq 0\)</span> and <span class="arithmatex">\(x \in \ker(L_B)\)</span>. That is: <br />
 </p>
-<div class="arithmatex">\[\begin{pmatrix} 2 &amp; 1 \\ 4 &amp; 2 \end{pmatrix} \begin{pmatrix} x_1 \\ x_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}$$   
-$$\implies \begin{pmatrix} 2x_1 + x_2 \\ 4x_1 + 2x_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}\]</div>
+<div class="arithmatex">\[\begin{pmatrix} 2 &amp; 1 \\ 4 &amp; 2 \end{pmatrix} \begin{pmatrix} x_1 \\ x_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}\]</div>
+<div class="arithmatex">\[\implies \begin{pmatrix} 2x_1 + x_2 \\ 4x_1 + 2x_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}\]</div>
 <p>From that, we have: <br />
 </p>
 <ul>
@@ -559,9 +559,9 @@ $$\implies \begin{pmatrix} 2x_1 + x_2 \\ 4x_1 + 2x_2 \end{pmatrix} = \begin{pmat
 </p>
 <p>Let's set <span class="arithmatex">\(\det(A - \lambda I) = 0\)</span> to find the eigenvalues: <br />
 </p>
-<div class="arithmatex">\[\det \begin{pmatrix} \lambda &amp; -1 \\ 1 &amp; -\lambda \end{pmatrix} = 0$$   
-$$(-\lambda)(-\lambda) + 1 = 0$$   
-$$\lambda^2 + 1 = 0\]</div>
+<div class="arithmatex">\[\det \begin{pmatrix} \lambda &amp; -1 \\ 1 &amp; -\lambda \end{pmatrix} = 0\]</div>
+<div class="arithmatex">\[(-\lambda)(-\lambda) + 1 = 0\]</div>
+<div class="arithmatex">\[\lambda^2 + 1 = 0\]</div>
 <p>Upon solving this quadratic equation, we get that <span class="arithmatex">\(\lambda_{1, 2} = \pm i\)</span>. Note how these eigenvalues exist in <span class="arithmatex">\(\mathbb{C}\)</span>, but not in <span class="arithmatex">\(\mathbb{R}\)</span>.
 </p>
 </div>

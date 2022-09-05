@@ -7,7 +7,7 @@
                 <meta charset="UTF-8" />
                 <meta name="node_id" content="Bisection Method">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <link rel="shortcut icon" href="favicon.ico" />
+                <link rel="shortcut icon" href="/favicon.ico" />
 
                 <!-- Set title -->
                 <title>🗃️ Notkesto</title>
@@ -195,17 +195,17 @@
                         <div id="left_pane" class="left_pane active">
                                 <div id="left_pane_fold_header" class="left_pane_fold_header fold_header">x</div>
                                 <div id="left_pane_content" class="left_pane_content">
-                                        <button id="folder-1" class="dir-button" onclick="toggle_dir(this.id)">images</button>
-<div id="folder-container-1" class="dir-container requires_js " path="/notkesto/images">
+                                        <button id="folder-1" class="dir-button" onclick="toggle_dir(this.id)">Images</button>
+<div id="folder-container-1" class="dir-container requires_js " path="/notkesto/Images">
 	<ul class="dir-list">
-		<li><a class="" href="/notkesto/images/BisectionMethodExample.png"  class="external-link">BisectionMethodExample</a></li>
-		<li><a class="" href="/notkesto/images/DigraphExample.png"  class="external-link">DigraphExample</a></li>
-		<li><a class="" href="/notkesto/images/InverseLinearTransformation.png"  class="external-link">InverseLinearTransformation</a></li>
-		<li><a class="" href="/notkesto/images/LessOctetSubnetB.png"  class="external-link">LessOctetSubnetB</a></li>
-		<li><a class="" href="/notkesto/images/Line.png"  class="external-link">Line</a></li>
-		<li><a class="" href="/notkesto/images/LinearTransformationComposition.png"  class="external-link">LinearTransformationComposition</a></li>
-		<li><a class="" href="/notkesto/images/MoreOctetSubnetB.png"  class="external-link">MoreOctetSubnetB</a></li>
-		<li><a class="" href="/notkesto/images/OneOctetSubnetB.png"  class="external-link">OneOctetSubnetB</a></li>
+		<li><a class="" href="/notkesto/Images/BisectionMethodExample.png"  class="external-link">BisectionMethodExample</a></li>
+		<li><a class="" href="/notkesto/Images/DigraphExample.png"  class="external-link">DigraphExample</a></li>
+		<li><a class="" href="/notkesto/Images/InverseLinearTransformation.png"  class="external-link">InverseLinearTransformation</a></li>
+		<li><a class="" href="/notkesto/Images/LessOctetSubnetB.png"  class="external-link">LessOctetSubnetB</a></li>
+		<li><a class="" href="/notkesto/Images/Line.png"  class="external-link">Line</a></li>
+		<li><a class="" href="/notkesto/Images/LinearTransformationComposition.png"  class="external-link">LinearTransformationComposition</a></li>
+		<li><a class="" href="/notkesto/Images/MoreOctetSubnetB.png"  class="external-link">MoreOctetSubnetB</a></li>
+		<li><a class="" href="/notkesto/Images/OneOctetSubnetB.png"  class="external-link">OneOctetSubnetB</a></li>
 	</ul>
 </div>
 <ul class="dir-list">
@@ -360,7 +360,7 @@
 </ul>
 </div>
 <p>Let <span class="arithmatex">\(f(x)\)</span> be any <a href="/notkesto/not_created.html" class="nonexistent-link">continuous function</a> defined in an interval <span class="arithmatex">\([a,b]\)</span>, with <span class="arithmatex">\(f(a)\)</span> and <span class="arithmatex">\(f(b)\)</span> having different signs. Then, there exists a <span class="arithmatex">\(p\)</span>, <span class="arithmatex">\(a &lt; p &lt; b\)</span>, such that <span class="arithmatex">\(f(p) = 0\)</span>:   </p>
-<p><img alt="" src="/notkesto/images/BisectionMethodExample.png" />   </p>
+<p><img alt="" src="/notkesto/Images/BisectionMethodExample.png" />   </p>
 <p>To find <span class="arithmatex">\(p\)</span>, we follow these steps:   </p>
 <ol>
 <li>We choose an initial interval <span class="arithmatex">\([a,b]\)</span>   </li>
@@ -406,9 +406,9 @@
 </p>
 <p>With an error margin <span class="arithmatex">\(\xi &gt; 0\)</span>, <span class="arithmatex">\(N\)</span> the number of iterations carried out, and <span class="arithmatex">\(p_{N}\)</span> the last approximation, we can stop the method when any of the following becomes true, according to our needs: <br />
 </p>
-<div class="arithmatex">\[|f(p_{N)}| &lt; \xi$$   
-$$|p_{N} - p_{N-1}| &lt; \xi$$   
-$$\frac{|p_{N} - p_{N-1}|}{|p_{N}|} &lt; \xi, \quad p_{N} \neq 0\]</div>
+<div class="arithmatex">\[|f(p_{N)}| &lt; \xi\]</div>
+<div class="arithmatex">\[|p_{N} - p_{N-1}| &lt; \xi\]</div>
+<div class="arithmatex">\[\frac{|p_{N} - p_{N-1}|}{|p_{N}|} &lt; \xi, \quad p_{N} \neq 0\]</div>
 </div>
 </div>
 <h1 id="advantages-and-disadvantages">Advantages and Disadvantages</h1>
@@ -446,15 +446,15 @@ $$\frac{|p_{N} - p_{N-1}|}{|p_{N}|} &lt; \xi, \quad p_{N} \neq 0\]</div>
 </p>
 <p>We start by isolating <span class="arithmatex">\(N\)</span>: <br />
 </p>
-<div class="arithmatex">\[|p_{N} - p_{N-1} | \leq \frac{b-a}{2^{n}}$$   
-$$|p_{N} - p_{N-1} \leq 2^{-N} (b-a) \leq 10^{-5}$$   
-$$|p_{N} - p_{N-1}| \leq 2^{-N} \leq 10^{-5}$$   
-$$2^{-N} \leq 10^{-5}\]</div>
+<div class="arithmatex">\[|p_{N} - p_{N-1} | \leq \frac{b-a}{2^{n}}\]</div>
+<div class="arithmatex">\[|p_{N} - p_{N-1} \leq 2^{-N} (b-a) \leq 10^{-5}\]</div>
+<div class="arithmatex">\[|p_{N} - p_{N-1}| \leq 2^{-N} \leq 10^{-5}\]</div>
+<div class="arithmatex">\[2^{-N} \leq 10^{-5}\]</div>
 <p>…then by calculating the base 10 logarithm on both sides: <br />
 </p>
-<div class="arithmatex">\[\log_{10}(2^{-N}) \leq \log_{10}(10^{-5})$$   
-$$-N \log_{10}(2) \leq -5$$   
-$$N \geq \frac{5}{\log_{10}(2)} \approx 16.609\]</div>
+<div class="arithmatex">\[\log_{10}(2^{-N}) \leq \log_{10}(10^{-5})\]</div>
+<div class="arithmatex">\[-N \log_{10}(2) \leq -5\]</div>
+<div class="arithmatex">\[N \geq \frac{5}{\log_{10}(2)} \approx 16.609\]</div>
 <p>Thus, we need approximately 17 iterations to reach the desired precision.
 </p>
 </div>
