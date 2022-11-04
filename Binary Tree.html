@@ -5,7 +5,7 @@
         <head>
                 <!-- Page information -->
                 <meta charset="UTF-8" />
-                <meta name="node_id" content="Surjective Linear Transformations">
+                <meta name="node_id" content="Binary Tree">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="shortcut icon" href="/favicon.ico" />
 
@@ -47,7 +47,7 @@
 
                 <!-- Onload tweaks -->
                 <script>
-                        const CURRENT_NODE = 'Surjective Linear Transformations';
+                        const CURRENT_NODE = 'Binary Tree';
                         const HTML_URL_PREFIX = '/notkesto';
                         const CONFIGURED_HTML_URL_PREFIX = '/notkesto';
                         const PAGE_DEPTH = 0;
@@ -362,39 +362,59 @@
                                 </div>
                         </div>
                         <div class="container">
-                                <embeddedtitle>Surjective linear transformations</embeddedtitle>
-<p><strong>Topics:</strong> <a href="/notkesto/Algebra.html">Algebra</a> - <a href="/notkesto/Linear Transformation.html">Linear Transformation</a>   </p>
+                                <embeddedtitle>Binary tree</embeddedtitle>
+<p><strong><em>Topics:</em></strong> <a href="/notkesto/Tree.html">Tree</a> - <a href="/notkesto/not_created.html" class="nonexistent-link">Data Structure</a>   </p>
 <hr />
-<p>Let <span class="arithmatex">\(T : V \rightarrow W\)</span> be <a href="/notkesto/not_created.html" class="nonexistent-link">linear</a>.   </p>
-<p><span class="arithmatex">\(T\)</span> is <a href="/notkesto/not_created.html" class="nonexistent-link">surjective</a> if <span class="arithmatex">\(\text{im}(T) = W\)</span>.   </p>
-<p>That is, if <span class="arithmatex">\(T\)</span> is surjective, then <span class="arithmatex">\(\forall\ w \in W\)</span> there exists <span class="arithmatex">\(v \in V\)</span> such that <span class="arithmatex">\(T(v) = w\)</span>.   </p>
-<h1 id="equivalences">Equivalences</h1>
+<p>A <em>binary tree</em> is a <a href="/notkesto/Tree.html">tree</a> in which every node can have 0, 1 or 2 children nodes. It's used to save up memory and space, since other kind of trees can waste a lot of memory and space.   </p>
+<p>Formally, it's defined as a homogeneous structure that's the concatenation of a root node with two disjoint binary trees (called left sub-tree and right sub-tree).    </p>
+<h1 id="converting-a-non-binary-tree-to-a-binary-tree">Converting a Non-Binary Tree to a Binary Tree</h1>
 <div class="toc">
 <ul>
-<li><a href="#equivalences" class="anchor-link">Equivalences</a></li>
+<li><a href="#converting-a-non-binary-tree-to-a-binary-tree" class="anchor-link">Converting a Non-Binary Tree to a Binary Tree</a></li>
+<li><a href="#memory-representation" class="anchor-link">Memory representation</a></li>
 </ul>
 </div>
-<p>The following statements are <a href="/notkesto/not_created.html" class="nonexistent-link">equivalent</a>:   </p>
+<p>To convert a tree that's non-binary to one that's binary, we can use the following process:   </p>
 <ol>
-<li><span class="arithmatex">\(T\)</span> is surjective   </li>
-<li><span class="arithmatex">\(\forall\)</span> set <span class="arithmatex">\(A\)</span> that <a href="/notkesto/not_created.html" class="nonexistent-link">spans</a> <span class="arithmatex">\(V\)</span> (<span class="arithmatex">\(\text{span}(A) = V\)</span>) <span class="arithmatex">\(\implies \text{span}(T(A)) = W\)</span>   </li>
-<li>There exists a set <span class="arithmatex">\(A_0\)</span> that spans <span class="arithmatex">\(V\)</span> such that <span class="arithmatex">\(T(A_0)\)</span> spans <span class="arithmatex">\(W\)</span> (dubious)</li>
+<li>Link horizontally the offspring of each node (i.e. link the siblings)   </li>
+<li>Link vertically the parent node with the leftmost child, then delete the link between that parent and the rest of its offspring   </li>
+<li>Rotate the corresponding diagram by 45°   </li>
 </ol>
+<p>The links to the left of a node represent parent-child relationships, while the links to the right represent sibling relationships.   </p>
+<h1 id="memory-representation">Memory representation</h1>
+<p>A binary tree can be represented in memory as a register that contains three fields:   </p>
+<ol>
+<li>The link to a children node (left link)   </li>
+<li>Information in the node   </li>
+<li>The link to a sibling node (right link)   </li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Left link</th>
+<th>Info</th>
+<th>Right link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <div class="note-footer">
 <div class="backlinks">
 <h2>Backlinks</h2>
 <ul>
-	<li><a class="backlink" href="/notkesto/Bijective Linear Transformations.html">Bijective Linear Transformations</a></li>
+	<li><a class="backlink" href="/notkesto/Tree.html">Tree</a></li>
+	<li><a class="backlink" href="/notkesto/Search Binary Tree.html">Search Binary Tree</a></li>
 </ul>
 </div>
 
 <div class="tags">
-<h2>Tags</h2>
-<ul>
-	<li><a class="backlink" href="/notkesto/obs.html/tags/🌲/index.html">🌲</a></li>
-	<li><a class="backlink" href="/notkesto/obs.html/tags/ÁL/index.html">ÁL</a></li>
-	<li><a class="backlink" href="/notkesto/obs.html/tags/S2/index.html">S2</a></li>
-</ul>
+
 </div>
 
 </div>

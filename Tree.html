@@ -5,7 +5,7 @@
         <head>
                 <!-- Page information -->
                 <meta charset="UTF-8" />
-                <meta name="node_id" content="Surjective Linear Transformations">
+                <meta name="node_id" content="Tree">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="shortcut icon" href="/favicon.ico" />
 
@@ -47,7 +47,7 @@
 
                 <!-- Onload tweaks -->
                 <script>
-                        const CURRENT_NODE = 'Surjective Linear Transformations';
+                        const CURRENT_NODE = 'Tree';
                         const HTML_URL_PREFIX = '/notkesto';
                         const CONFIGURED_HTML_URL_PREFIX = '/notkesto';
                         const PAGE_DEPTH = 0;
@@ -362,29 +362,52 @@
                                 </div>
                         </div>
                         <div class="container">
-                                <embeddedtitle>Surjective linear transformations</embeddedtitle>
-<p><strong>Topics:</strong> <a href="/notkesto/Algebra.html">Algebra</a> - <a href="/notkesto/Linear Transformation.html">Linear Transformation</a>   </p>
+                                <embeddedtitle>Tree</embeddedtitle>
+<p><strong><em>Topics:</em></strong> <a href="/notkesto/not_created.html" class="nonexistent-link">Data Structure</a>   </p>
 <hr />
-<p>Let <span class="arithmatex">\(T : V \rightarrow W\)</span> be <a href="/notkesto/not_created.html" class="nonexistent-link">linear</a>.   </p>
-<p><span class="arithmatex">\(T\)</span> is <a href="/notkesto/not_created.html" class="nonexistent-link">surjective</a> if <span class="arithmatex">\(\text{im}(T) = W\)</span>.   </p>
-<p>That is, if <span class="arithmatex">\(T\)</span> is surjective, then <span class="arithmatex">\(\forall\ w \in W\)</span> there exists <span class="arithmatex">\(v \in V\)</span> such that <span class="arithmatex">\(T(v) = w\)</span>.   </p>
-<h1 id="equivalences">Equivalences</h1>
+<p>A <em>tree</em> is a <a href="/notkesto/not_created.html" class="nonexistent-link">non-linear</a> and dynamic data structure. It's dynamic since its structure can change during the execution of a program, and it's non-linear since each of its elements can be followed by more than one element.   </p>
+<div class="callout callout-info active callout-folded" rasa="1">
+<div class="callout-title" onclick="toggle(this.parentElement)">
+<div class="callout-title-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="callout-icon"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+</div>
+<div class="callout-title-name">Other definitions <br />
+</div>
+<div class="callout-title-fold"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ChevronDown"><polyline points="6 9 12 15 18 9"></polyline>
+</div>
+</div>
+<div class="callout-content">
+<p>A tree can also be called a <em>hierarchical data</em> structure that contains a collection of elements called <em>nodes</em>, one of them known as <em>root</em>. Between all of these elements, <em>parent-child</em> relations are established. <br />
+</p>
+<p>At the same time, trees are homogeneous structures defined by the concatenation of one node element along with a finite number of disjoint trees called <em>sub-trees</em>.  <br />
+</p>
+</div>
+</div>
+<p>As with <a href="/notkesto/List.html">lists</a>, <a href="/notkesto/Stack.html">stacks</a> and <a href="/notkesto/Queue.html">queues</a>, trees can be contiguous (which use arrays) or linked (which use pointers). Despite that, trees are commonly linked since they are a dynamic data structure.   </p>
+<p>A <a href="/notkesto/Binary Tree.html">binary tree</a> is a special type of tree that is used to save up memory and space, since trees that contain nodes each with a different number of offspring  can waste a lot of memory and space.   </p>
+<h1 id="graphical-representation">Graphical representation</h1>
 <div class="toc">
 <ul>
-<li><a href="#equivalences" class="anchor-link">Equivalences</a></li>
+<li><a href="#graphical-representation" class="anchor-link">Graphical representation</a></li>
 </ul>
 </div>
-<p>The following statements are <a href="/notkesto/not_created.html" class="nonexistent-link">equivalent</a>:   </p>
+<p>Graphically, trees can be seen as a <a href="/notkesto/not_created.html" class="nonexistent-link">graph</a> with the following features:   </p>
 <ol>
-<li><span class="arithmatex">\(T\)</span> is surjective   </li>
-<li><span class="arithmatex">\(\forall\)</span> set <span class="arithmatex">\(A\)</span> that <a href="/notkesto/not_created.html" class="nonexistent-link">spans</a> <span class="arithmatex">\(V\)</span> (<span class="arithmatex">\(\text{span}(A) = V\)</span>) <span class="arithmatex">\(\implies \text{span}(T(A)) = W\)</span>   </li>
-<li>There exists a set <span class="arithmatex">\(A_0\)</span> that spans <span class="arithmatex">\(V\)</span> such that <span class="arithmatex">\(T(A_0)\)</span> spans <span class="arithmatex">\(W\)</span> (dubious)</li>
+<li>Every non-empty tree has one and only one <em>root node</em>   </li>
+<li>Loops can't exist   </li>
+<li>The number if lines is always <span class="arithmatex">\(n-1\)</span>, where <span class="arithmatex">\(n\)</span> is the number of elements in the tree   </li>
+<li>A node <span class="arithmatex">\(X\)</span> is a <em>direct child</em> of a node <span class="arithmatex">\(Y\)</span> if <span class="arithmatex">\(X\)</span> is being pointed to by <span class="arithmatex">\(Y\)</span>   </li>
+<li>A node <span class="arithmatex">\(X\)</span> is a <em>direct parent</em> of a node <span class="arithmatex">\(Y\)</span> if <span class="arithmatex">\(X\)</span> points to <span class="arithmatex">\(Y\)</span>    </li>
+<li>Every node that has no children is called a <em>terminal</em> or <em>leaf</em>   </li>
+<li>Every node that isn't the root node nor a terminal node is known as an <em>interior node</em>   </li>
+<li>The <em>degree</em> of a node is the number of direct offspring of a node. The degree of the tree is the maximum degree among all the node degrees   </li>
+<li>The <em>level</em> is the amount of links that have to be traversed to reach a certain node plus one. By definition, the root node has a level of 1   </li>
+<li>The <em>height</em> of a tree is the maximum number of levels among all the levels within the tree</li>
 </ol>
 <div class="note-footer">
 <div class="backlinks">
 <h2>Backlinks</h2>
 <ul>
-	<li><a class="backlink" href="/notkesto/Bijective Linear Transformations.html">Bijective Linear Transformations</a></li>
+	<li><a class="backlink" href="/notkesto/Binary Tree.html">Binary Tree</a></li>
 </ul>
 </div>
 
@@ -392,8 +415,8 @@
 <h2>Tags</h2>
 <ul>
 	<li><a class="backlink" href="/notkesto/obs.html/tags/🌲/index.html">🌲</a></li>
-	<li><a class="backlink" href="/notkesto/obs.html/tags/ÁL/index.html">ÁL</a></li>
-	<li><a class="backlink" href="/notkesto/obs.html/tags/S2/index.html">S2</a></li>
+	<li><a class="backlink" href="/notkesto/obs.html/tags/S3/index.html">S3</a></li>
+	<li><a class="backlink" href="/notkesto/obs.html/tags/ED/index.html">ED</a></li>
 </ul>
 </div>
 

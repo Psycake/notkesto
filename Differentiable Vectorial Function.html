@@ -223,6 +223,7 @@
 	<li><a class="" href="/notkesto/Associated Matrix of Operated Transformations.html"  >Associated Matrix of Operated Transformations</a></li>
 	<li><a class="" href="/notkesto/Associated Matrix of a Linear Transformation.html"  >Associated Matrix of a Linear Transformation</a></li>
 	<li><a class="" href="/notkesto/Bijective Linear Transformations.html"  >Bijective Linear Transformations</a></li>
+	<li><a class="" href="/notkesto/Binary Tree.html"  >Binary Tree</a></li>
 	<li><a class="" href="/notkesto/Bisection Method.html"  >Bisection Method</a></li>
 	<li><a class="" href="/notkesto/Boolean Matrix.html"  >Boolean Matrix</a></li>
 	<li><a class="" href="/notkesto/Boundary Point.html"  >Boundary Point</a></li>
@@ -335,6 +336,7 @@
 	<li><a class="" href="/notkesto/Relations as a Set.html"  >Relations as a Set</a></li>
 	<li><a class="" href="/notkesto/Relative Error.html"  >Relative Error</a></li>
 	<li><a class="" href="/notkesto/Rounding Error.html"  >Rounding Error</a></li>
+	<li><a class="" href="/notkesto/Search Binary Tree.html"  >Search Binary Tree</a></li>
 	<li><a class="" href="/notkesto/Secant Method.html"  >Secant Method</a></li>
 	<li><a class="" href="/notkesto/Sequence.html"  >Sequence</a></li>
 	<li><a class="" href="/notkesto/Series.html"  >Series</a></li>
@@ -348,6 +350,7 @@
 	<li><a class="" href="/notkesto/Taylor Series.html"  >Taylor Series</a></li>
 	<li><a class="" href="/notkesto/Taylor Theorem.html"  >Taylor Theorem</a></li>
 	<li><a class="" href="/notkesto/Total Order Relation.html"  >Total Order Relation</a></li>
+	<li><a class="" href="/notkesto/Tree.html"  >Tree</a></li>
 	<li><a class="" href="/notkesto/Two Line Cases.html"  >Two Line Cases</a></li>
 	<li><a class="" href="/notkesto/Upper and Lower Bounds.html"  >Upper and Lower Bounds</a></li>
 	<li><a class="" href="/notkesto/Vector Space.html"  >Vector Space</a></li>
@@ -367,6 +370,7 @@
 <ul>
 <li><a href="#mathbb-r-2-to-mathbb-r" class="anchor-link">\(\mathbb{R}^{2}\to \mathbb{R}\)</a><ul>
 <li><a href="#tangent-plane" class="anchor-link">Tangent Plane</a></li>
+<li><a href="#differentiable-on-a-point" class="anchor-link">Differentiable on a Point</a></li>
 </ul>
 </li>
 <li><a href="#mathbb-r-n-to-mathbb-r-m" class="anchor-link">\(\mathbb{R}^{n} \to \mathbb{R}^{m}\)</a></li>
@@ -374,8 +378,8 @@
 </div>
 <p><strong><em>(definition)</em></strong>   </p>
 <p>Let <span class="arithmatex">\(f:\mathbb{R}^{2} \to \mathbb{R}\)</span> be a <a href="/notkesto/Vectorial Function.html">vectorial function</a>. We say that <span class="arithmatex">\(f\)</span> is <em>differentiable</em> on <span class="arithmatex">\((x_{0}, y_{0})\)</span> if there exists a linear function <span class="arithmatex">\(T:\mathbb{R}^{2} \to \mathbb{R}\)</span> such that:   </p>
-<div class="arithmatex">\[\lim_{(x,y) \to (x_{0}, y_{0})} \frac{f(x,y) - \left(f(x_{0}, y_{0}) + T(x,y)\right)}{| (x,y) - (x_{0}, y_{0})|} = 0\]</div>
-<p>We call <span class="arithmatex">\(T\)</span> the <em>tangent plane</em>.   </p>
+<div class="arithmatex">\[\lim_{(x,y) \to (x_{0}, y_{0})} \frac{f(x,y) - T(x_{0},y_{0})}{| (x,y) - (x_{0}, y_{0})|} = 0\]</div>
+<p>We call <span class="arithmatex">\(T\)</span> the <em>tangent <a href="/notkesto/Plane.html">plane</a></em>.   </p>
 <h2 id="tangent-plane">Tangent Plane</h2>
 <p><strong><em>(definition)</em></strong>   </p>
 <p>If <span class="arithmatex">\(f : \mathbb{R}^{2} \to \mathbb{R}\)</span> is a differentiable function on <span class="arithmatex">\((x_{0},y_{0})\)</span>, then the equation of the plane that's tangent on <span class="arithmatex">\((x_{0},y_{0})\)</span> is defined as:   </p>
@@ -393,15 +397,15 @@
 <div class="callout-content">
 <p>For example, the plane that's tangent to <span class="arithmatex">\(f:\mathbb{R}^{2} \to \mathbb{R}\)</span>, <span class="arithmatex">\(f(x,y) = x^{2} + y^{2}\)</span> on <span class="arithmatex">\((2,1)\)</span> is: <br />
 </p>
-<div class="arithmatex">\[T(x,y) =  f(2,1) + \frac{\partial f(2,1)}{\partial x}(x-2) + \frac{\partial f(2,1)}{\partial y}(2,1)(y-1)\]</div>
+<div class="arithmatex">\[T(x,y) =  f(2,1) + \frac{\partial f(2,1)}{\partial x}(x-2) + \frac{\partial f(2,1)}{\partial y}(y-1)\]</div>
 <p>The partial derivatives of <span class="arithmatex">\(f\)</span> are: <br />
 </p>
-<div class="arithmatex">\[\frac{\partial f}{\partial x} = 2x$$   
-$$\frac{\partial f}{\partial y} = 2y\]</div>
+<div class="arithmatex">\[\frac{\partial f}{\partial x} = 2x\]</div>
+<div class="arithmatex">\[\frac{\partial f}{\partial y} = 2y\]</div>
 <p>So finally: <br />
 </p>
-<div class="arithmatex">\[T(x,y) = 5 + 4(x-2) + 2(y-1)$$   
-$$T(x,y) = 4x + 2y - 5\]</div>
+<div class="arithmatex">\[T(x,y) = 5 + 4(x-2) + 2(y-1)\]</div>
+<div class="arithmatex">\[T(x,y) = 4x + 2y - 5\]</div>
 </div>
 </div>
 <div class="callout callout-warning active callout-folded" rasa="1">
@@ -417,6 +421,8 @@ $$T(x,y) = 4x + 2y - 5\]</div>
 <p>It is <em>important</em> to differentiate between the concepts of differentiability and derivability, especially in vectorial functions like these. <br />
 </p>
 <p>A function is <strong>both</strong> derivable <em>and</em> differentiable if such a tangent exists. However, some functions can be derivable but <strong>not</strong> differentiable: a function is derivable if a <a href="/notkesto/not_created.html" class="nonexistent-link">derivative</a> (or <a href="/notkesto/not_created.html" class="nonexistent-link">partial derivative</a>) can be calculated, but the existence of such a derivative doesn't imply a tangent plane also exists. <br />
+</p>
+<p>A function being differentiable on a point just means that its best linear approximation (the tangent plane) is very very close to its actual value. <br />
 </p>
 <div class="callout callout-example active callout-folded" rasa="1">
 <div class="callout-title" onclick="toggle(this.parentElement)">
@@ -441,6 +447,10 @@ $$\frac{\partial f}{\partial y} (0,0) = 0\]</div>
 </div>
 </div>
 </div>
+<h2 id="differentiable-on-a-point">Differentiable on a Point</h2>
+<p><strong><em>(theorem)</em></strong>   </p>
+<p>Let <span class="arithmatex">\(f : A \subseteq \mathbb{R}^{2} \to \mathbb{R}\)</span> be a function.   </p>
+<p>If <span class="arithmatex">\(\exists \frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}\)</span> in a <a href="/notkesto/Open Ball.html">neighbourhood</a> <span class="arithmatex">\(u\)</span> that contains a point <span class="arithmatex">\(x_0\)</span>, and they're both <a href="/notkesto/Continuous Function.html">continuous</a>, then <strong><span class="arithmatex">\(f\)</span> is differentiable on <span class="arithmatex">\(x_0\)</span></strong>.   </p>
 <h1 id="mathbb-r-n-to-mathbb-r-m"><span class="arithmatex">\(\mathbb{R}^{n} \to \mathbb{R}^{m}\)</span></h1>
 <p>Vectorial functions <a href="/notkesto/not_created.html" class="nonexistent-link">can also be differentiable when they go</a> <span class="arithmatex">\(\mathbb{R}^{n} \to \mathbb{R}^{m}\)</span>.</p>
 <div class="note-footer">
